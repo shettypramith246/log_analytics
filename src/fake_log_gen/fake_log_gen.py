@@ -1,5 +1,4 @@
 # Fake log files generator
-
 import os
 import random
 import json
