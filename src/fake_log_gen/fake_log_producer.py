@@ -10,7 +10,7 @@ from asyncio import coroutine
 import numpy
 from kafka import KafkaProducer
 import sys
-sys.path.append("C:\\Users\\Pramith Shetty\\PycharmProjects\\log_analytics\\src")
+sys.path.append("/")
 from src.fake_log_gen import fake_log_gen
 
 
