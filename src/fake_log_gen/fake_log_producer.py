@@ -10,9 +10,8 @@ from asyncio import coroutine
 
 import numpy
 from kafka import KafkaProducer
+
 from src.fake_log_gen import fake_log_gen
-
-
 # Used to generate Apache Access Logs
 # And send to Kafka
 class fake_access_producer(fake_log_gen.fake_access_gen):
