@@ -1,4 +1,4 @@
-from src.fake_log_gen import fake_log_gen
+from fake_log_gen import fake_log_gen
 import kafka
 from kafka import KafkaProducer
 from kafka.errors import KafkaError
