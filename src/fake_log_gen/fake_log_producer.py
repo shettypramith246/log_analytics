@@ -9,11 +9,9 @@ import time
 from asyncio import coroutine
 import numpy
 from kafka import KafkaProducer
-from src.fake_log_gen import fake_log_gen
 import sys
-
-sys.path.append('src/fake_log_gen')
-import fake_log_gen
+sys.path.append('C:\Users\Pramith Shetty\PycharmProjects\log_analytics\src')
+from src.fake_log_gen import fake_log_gen
 
 
 # Used to generate Apache Access Logs
