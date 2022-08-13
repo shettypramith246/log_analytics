@@ -1,5 +1,8 @@
-from script import fake_log_gen
-from kafka import KafkaProduce
+from src.fake_log_gen import fake_log_gen
+import kafka
+from kafka import KafkaProducer
+from kafka.errors import KafkaError
+
 import os
 import random
 import json
@@ -229,4 +232,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 

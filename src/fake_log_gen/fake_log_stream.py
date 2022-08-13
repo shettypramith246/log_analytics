@@ -1,5 +1,6 @@
 from src.fake_log_gen import fake_log_gen
 import socket
+
 import os
 import random
 import json
@@ -178,4 +179,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
