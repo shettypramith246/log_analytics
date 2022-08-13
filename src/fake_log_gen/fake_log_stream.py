@@ -1,4 +1,4 @@
-from script import fake_log_gen
+from src.fake_log_gen import fake_log_gen
 import socket
 import os
 import random
