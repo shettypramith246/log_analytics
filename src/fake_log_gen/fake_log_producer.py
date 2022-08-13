@@ -212,12 +212,11 @@ def main():
     # Add the file Handler 'out' to the logger'log'
     log.addHandler(out)
 
-    # Load the configure json file to a dict
-    with open(os.environ["/Users/Pramith Shetty/PycharmProjects/log_analytics/config/fake_log_gen.json"]) as config_file:
+    # Load to configure json file to a dict
+    with open("C:/Users/Pramith Shetty/PycharmProjects/log_analytics/config/fake_log_gen.json") as config_file:
         config = json.load(config_file)
 
     # Load the kafka topic
-    with open("C:/Users/Pramith Shetty/PycharmProjects/log_analytics/config/kafka_monitor.json") as kafka_config_file:
     with open("C:/Users/Pramith Shetty/PycharmProjects/log_analytics/config/kafka_monitor.json") as kafka_config_file:
         kafka_config = json.load(kafka_config_file)
 
