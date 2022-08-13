@@ -1,18 +1,16 @@
-from fake_log_gen import fake_log_gen
-import kafka
-from kafka import KafkaProducer
-from kafka.errors import KafkaError
-
-import os
-import random
-import json
-import logging
 import argparse
 import asyncio
 import datetime
+import json
+import logging
+import os
+import random
 import time
 from asyncio import coroutine
+
 import numpy
+from kafka import KafkaProducer
+from src.fake_log_gen import fake_log_gen
 
 
 # Used to generate Apache Access Logs
