@@ -10,8 +10,8 @@ from asyncio import coroutine
 import numpy
 from kafka import KafkaProducer
 import sys
-sys.path.append("/")
-from src.fake_log_gen import fake_log_gen
+sys.path.append("C:/Users/Pramith Shetty/PycharmProjects/log_analytics/src")
+import fake_log_gen
 
 
 # Used to generate Apache Access Logs
@@ -213,11 +213,11 @@ def main():
     log.addHandler(out)
 
     # Load the configure json file to a dict
-    with open(os.environ['VISORHOME'] + "/config/fake_log_gen.json") as config_file:
+    with open(os.environ["/Users/Pramith Shetty/PycharmProjects/log_analytics/"] + "/config/fake_log_gen.json") as config_file:
         config = json.load(config_file)
 
     # Load the kafka topic
-    with open(os.environ['VISORHOME'] + "/config/kafka_monitor.json") as kafka_config_file:
+    with open(os.environ["/Users/Pramith Shetty/PycharmProjects/log_analytics/"] + "/config/kafka_monitor.json") as kafka_config_file:
         kafka_config = json.load(kafka_config_file)
 
     # Instantiate a fake log generator
