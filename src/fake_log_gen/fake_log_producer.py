@@ -217,7 +217,7 @@ def main():
         config = json.load(config_file)
 
     # Load the kafka topic
-    with open(os.environ["/Users/Pramith Shetty/PycharmProjects/log_analytics/"] + "/config/kafka_monitor.json") as kafka_config_file:
+    with open(os.environ["/Users/Pramith Shetty/PycharmProjects/log_analytics/config/kafka_monitor.json"]) as kafka_config_file:
         kafka_config = json.load(kafka_config_file)
 
     # Instantiate a fake log generator
