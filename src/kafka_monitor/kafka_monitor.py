@@ -233,7 +233,7 @@ Statistics:
         return ssc
 
     def run(self):
-        ssc = StreamingContext.getOrCreate(os.environ['VISORHOME'] + '/src/kafka_monitor/checkpoint/',
+        ssc = StreamingContext.getOrCreate('/Users/Pramith Shetty/PycharmProjects/log_analytics/src/kafka_monitor/checkpoint/',
                                            lambda: self.functionToCreateContext())
         ssc.start()
         ssc.awaitTermination()
