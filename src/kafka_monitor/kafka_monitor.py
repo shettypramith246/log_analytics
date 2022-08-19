@@ -1,12 +1,13 @@
+from pyspark.streaming import StreamingContext
+import pyspark
 from pyspark import SparkContext, SparkConf
 from pyspark.streaming import StreamingContext
-import pyspark.streaming.kafka
+from pyspark.streaming.kafka import KafkaUtils
 import json
 import os
 import smtplib
 import time
 import datetime
-
 
 class kafka_monitor(object):
 
