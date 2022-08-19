@@ -51,8 +51,6 @@ class fake_access_producer(fake_log_gen.fake_access_gen):
             # self.client.send((data+'\n').encode())
             self.producer.send(self.topic, (data + '\n').encode())
             yield from asyncio.sleep(random.uniform(self.access_min, self.access_max))
-
-
 # Used to generate Apache Error Logs
 # And send to Kafka
 class fake_error_producer(fake_log_gen.fake_error_gen):
