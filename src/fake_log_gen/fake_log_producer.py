@@ -8,7 +8,7 @@ import random
 import time
 from asyncio import coroutine
 import numpy
-from kafka import KafkaProducer
+from kafka.producer import KafkaProducer
 import sys
 sys.path.append("C:/Users/Pramith Shetty/PycharmProjects/log_analytics/src")
 import fake_log_gen
