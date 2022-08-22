@@ -12,11 +12,11 @@
 			"on": true,
 			"interval": 25,
 			"subject": "Summary Report",
-			"receiver": "wenyixu101@gmail.com"
+			"receiver": "shettypramith246@gmail.com"
 		},
 		"alert" : {
 			"on": true,
-			"receiver": "wenyixu101@gmail.com",
+			"receiver": "shettypramith246@gmail.com",
 			"subject": "Error Alert"
 		}
 	}
