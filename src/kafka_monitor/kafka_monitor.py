@@ -1,8 +1,9 @@
-from pyspark.streaming import StreamingContext
-import pyspark
+import findspark
+findspark.init()
 from pyspark import SparkContext, SparkConf
 from pyspark.streaming import StreamingContext
 from pyspark.streaming.kafka import KafkaUtils
+#import kafka_utils
 import json
 import os
 import smtplib
