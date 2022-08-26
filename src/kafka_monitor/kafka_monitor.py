@@ -234,18 +234,18 @@ Statistics:
         return ssc
 
     def run(self):
-        ssc = StreamingContext.getOrCreate("C:/Users/Pramith Shetty/PycharmProjects/log_analytics/src/kafka_monitor/checkpoint/", lambda: self.functionToCreateContext())
+        ssc = StreamingContext.getOrCreate("C:/Users/Pramith_Shetty/PycharmProjects/log_analytics/src/kafka_monitor/checkpoint/", lambda: self.functionToCreateContext())
         ssc.start()
         ssc.awaitTermination()
 
 
 if __name__ == "__main__":
     # Load the configurations
-    with open("C:/Users/Pramith Shetty/PycharmProjects/log_analytics/config/kafka_monitor.json") as config_file:
+    with open("C:/Users/Pramith_Shetty/PycharmProjects/log_analytics/config/kafka_monitor.json") as config_file:
         config = json.load(config_file)
 
     # Load private email information
-    with open("C:/Users/Pramith Shetty/PycharmProjects/log_analytics/config/kafka_monitor.json") as private_file:
+    with open("C:/Users/Pramith_Shetty/PycharmProjects/log_analytics/config/kafka_monitor.json") as private_file:
         config_private = json.load(private_file)
 
     monitor = kafka_monitor(config, config_private)
