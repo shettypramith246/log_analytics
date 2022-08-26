@@ -5,7 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/src/fake_log_gen_test" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.10 (log_analytics)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.6 (log_analytics) (2)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
