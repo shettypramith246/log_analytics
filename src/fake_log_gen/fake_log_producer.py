@@ -210,11 +210,11 @@ def main():
     log.addHandler(out)
 
     # Load to configure json file to a dict
-    with open("C:/Users/Pramith_Shetty/PycharmProjects/log_analytics/config/fake_log_gen.json") as config_file:
+    with open("/Users/Pramith_Shetty/PycharmProjects/log_analytics/config/fake_log_gen.json") as config_file:
         config = json.load(config_file)
 
     # Load the kafka topic
-    with open("C:/Users/Pramith_Shetty/PycharmProjects/log_analytics/config/kafka_monitor.json") as kafka_config_file:
+    with open("/Users/Pramith_Shetty/PycharmProjects/log_analytics/config/kafka_monitor.json") as kafka_config_file:
         kafka_config = json.load(kafka_config_file)
 
     # Instantiate a fake log generator
